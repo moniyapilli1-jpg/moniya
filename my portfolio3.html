@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #222;
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #00adb5;
+        }
+
+        /* Home */
+        #home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background-color: #e8f6f7;
+        }
+
+        #home h1 {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        #home h1 span {
+            color: #00adb5;
+        }
+
+        #home p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #00adb5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #008b91;
+        }
+
+        /* Common Section */
+        section {
+            padding: 70px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: #222;
+        }
+
+        /* About */
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 18px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #ccc;
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .project {
+            background-color: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px #ccc;
+            text-align: center;
+        }
+
+        .project h3 {
+            margin-bottom: 12px;
+            color: #00adb5;
+        }
+
+        .project p {
+            line-height: 1.6;
+        }
+
+        /* Education */
+        .education {
+            max-width: 700px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px #ccc;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            line-height: 2;
+        }
+
+        .contact a {
+            color: #00adb5;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            #home h1 {
+                font-size: 32px;
+            }
+
+            #home p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>My Portfolio</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div>
+            <h1>Hello, I'm <span>Moniya.Pilli</span></h1>
+
+            <p>B.Sc. Computer Science Graduate | Web Developer | Programmer</p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a B.Sc. Computer Science graduate with an interest in
+                web development, programming and software technologies.
+                I enjoy learning new technologies and creating useful
+                and user-friendly applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">C</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Git & GitHub</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+    
+
+                </p>
+            </div>
+
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2>Education</h2>
+
+        <div class="education">
+            <h3>B.Sc. Computer Science</h3>
+            <p>Graduated Student</p>
+            <p>College/University st.anns college for women </p>
+            <p>Year of Graduation: 2026</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>7093411879</h2>
+
+        <div class="contact">
+            <p>Email:moniyapilli@1gmail.com</p>
+            <p>Phone: +91 7093411879</p>
+
+            <p>
+                GitHub:
+                <a href="https://moniyapilligithub.com/" target="_blank">
+    
+                </a>
+            </p>
+
+            <p>
+                LinkedIn:
+                <a href="https://www.moniyapillilinkedin.com/" target="_blank">               
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Moniyapillii All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
